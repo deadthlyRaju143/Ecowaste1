@@ -1,0 +1,94 @@
+/* General app container styles */
+.App {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Navbar styling */
+nav {
+  background-color: #2e7d32; /* ecoGreen */
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #A8FF60; /* ecoAccent */
+}
+
+/* Footer styling */
+footer {
+  background-color: #1b1b1b; /* ecoDarkGray */
+  color: white;
+  padding: 3rem 1rem;
+}
+
+footer h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+footer p,
+footer li,
+footer a {
+  font-size: 0.9rem;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #A8FF60; /* ecoAccent */
+}
+
+/* Utility classes (optional) */
+.text-center {
+  text-align: center;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.space-x-6 > * + * {
+  margin-left: 1.5rem;
+}
+
+/* Responsive Grid for Footer */
+@media (min-width: 768px) {
+  .grid-cols-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}

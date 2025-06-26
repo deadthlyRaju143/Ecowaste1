@@ -1,0 +1,60 @@
+.sorting-container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.sorting-title {
+  text-align: center;
+  color: #2f855a;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sorting-intro {
+  text-align: center;
+  color: #4a5568;
+  margin-bottom: 2rem;
+}
+
+.sorting-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .sorting-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.sorting-card {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sorting-card h3 {
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.sorting-card ul {
+  padding-left: 1.2rem;
+  color: #555;
+}
+
+.sorting-tip {
+  margin-top: 2rem;
+  text-align: center;
+  color: #2d3748;
+  font-style: italic;
+}
+
+.sorting-card.organic { border-left: 6px solid #68d391; }
+.sorting-card.recyclable { border-left: 6px solid #4299e1; }
+.sorting-card.general { border-left: 6px solid #a0aec0; }
+.sorting-card.hazardous { border-left: 6px solid #e53e3e; }

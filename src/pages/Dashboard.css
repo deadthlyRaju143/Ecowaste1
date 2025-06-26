@@ -1,0 +1,126 @@
+.dashboard-container {
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2f855a; /* ecoGreen */
+  margin-bottom: 2rem;
+  animation: slideUp 0.6s ease-out;
+}
+
+.dashboard-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1024px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.dashboard-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 14px rgba(47, 133, 90, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+  box-shadow: 0 6px 20px rgba(47, 133, 90, 0.3);
+}
+
+.dashboard-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2f855a; /* ecoGreen */
+  margin-bottom: 1rem;
+}
+
+.dashboard-list {
+  list-style: none;
+  padding: 0;
+  color: #2d3748; /* ecoDarkGray */
+}
+
+.dashboard-list li {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.dashboard-stats > div {
+  display: flex;
+  justify-content: space-between;
+  color: #2d3748;
+  margin-bottom: 0.75rem;
+}
+
+.dashboard-impact {
+  color: #2d3748;
+  font-size: 1.125rem;
+}
+
+.dashboard-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #68d391; /* ecoLightGreen */
+  text-decoration: none;
+}
+
+.dashboard-link:hover {
+  color: #2f855a;
+}
+
+.dashboard-next {
+  margin-top: 2rem;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 14px rgba(47, 133, 90, 0.2);
+}
+
+.dashboard-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+  .dashboard-actions {
+    flex-direction: row;
+  }
+}
+
+.dashboard-button {
+  background-color: #68d391;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.dashboard-button:hover {
+  background-color: #2f855a;
+}
+
+/* Slide Up Animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
